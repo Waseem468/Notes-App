@@ -40,7 +40,7 @@ const NoteForm = () => {
             if (selectedNote) {
                 // If selectedNote exists, it means we are updating an existing note
                 const response = await axios.put(
-                    `http://localhost:5000/api/notes/${selectedNote._id}`,
+                    `https://note-app-5o9g.onrender.com/api/notes/${selectedNote._id}`,
                     { ...formData, userId },
                     {
                         headers: {
@@ -56,7 +56,7 @@ const NoteForm = () => {
             } else {
                 // If selectedNote doesn't exist, it means we are creating a new note
                 const response = await axios.post(
-                    'http://localhost:5000/api/notes',
+                    'https://note-app-5o9g.onrender.com/api/notes',
                     { ...formData, userId },
                     {
                         headers: {

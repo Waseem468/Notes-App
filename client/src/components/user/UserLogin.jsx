@@ -56,7 +56,7 @@ const Login = () => {
         }
         setLoder(true)
 
-        fetch("http://localhost:5000/user/login", {
+        fetch("https://note-app-5o9g.onrender.com/user/login", {
 
             method: "POST",
             headers: {

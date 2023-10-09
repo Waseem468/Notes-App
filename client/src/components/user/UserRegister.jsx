@@ -91,7 +91,7 @@ const Register = () => {
         }
         else {
             setLoder(true)
-            const res = await fetch('http://localhost:5000/user/register', {
+            const res = await fetch('https://note-app-5o9g.onrender.com/user/register', {
                 method: 'POST',
                 headers: {
                     "content-type": "application/json",

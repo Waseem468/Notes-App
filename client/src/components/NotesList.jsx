@@ -13,7 +13,7 @@ function NotesList() {
         // Fetch user's notes from the backend
         const fetchNotes = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/notes/${userId}`);
+                const response = await axios.get(`https://note-app-5o9g.onrender.com/api/notes/${userId}`);
                 setNotes(response.data);
             } catch (error) {
                 console.error('Fetching notes error:', error);
@@ -31,7 +31,7 @@ function NotesList() {
 
     const handleDeleteClick = async (id) => {
         try {
-            const response=await axios.delete(`http://localhost:5000/api/notes/${id}`);
+            const response=await axios.delete(`https://note-app-5o9g.onrender.com/api/notes/${id}`);
             if (response.status === 200) {
                 alert('Note deleted successfully!');
             }
