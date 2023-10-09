@@ -10,7 +10,6 @@ const Register = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        contact: '',
         password: '',
         confirmPassword: ''
     })
@@ -20,7 +19,7 @@ const Register = () => {
     //Validation for user registration
 
     function doValidate() {
-        const { name, email, contact, password, confirmPassword } = formData
+        const { name, email, password, confirmPassword } = formData
         if (!name) {
             toast.error('name can not be blank')
         }

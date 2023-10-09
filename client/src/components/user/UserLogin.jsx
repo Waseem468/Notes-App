@@ -69,7 +69,7 @@ const Login = () => {
 
                 localStorage.setItem("User-token", JSON.stringify(res.token));
                 localStorage.setItem("User-Id", JSON.stringify(res.userId))
-                Navigater("/main")
+                Navigater("/landing")
             } else if (res.status === "fail") {
                 setLoder(false)
                 toast.error("Please Enter Correct Details")

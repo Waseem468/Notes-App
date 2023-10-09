@@ -1,0 +1,82 @@
+.notelist {
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; 
+    gap: 20px; 
+  }
+  
+  /* Style for each note item */
+  .formlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:200px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  /* Style for note title */
+  .formlist strong {
+    font-size: 18px;
+    color: #333;
+
+  }
+  /* .front-section{
+    width: 100%;
+    border: 1px solid black;
+
+  } */
+  
+  /* Style for note description */
+  .formlist p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:white;
+    text-align: left;
+  }
+  
+
+ 
+  /* Style for note title */
+  strong {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Style for note description */
+  p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .listButton{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: green;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+
+  }

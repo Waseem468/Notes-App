@@ -1,22 +1,19 @@
-import React from 'react'
+import React from 'react';
 import '../styles/landing.css';
+import NoteForm from "./NoteForm";
+import NotesList from "./NotesList";
 
-const landingPage = () => {
-    return (
-        <div className='main-container'>
-            <h1 style={{ color: "red",marginBottom:"30px" }}>WELCOME TO OUR NOTES APP ENTER YOUR NOTES CREDENTIALS BELOW</h1>
-            <div className="notes">
-                <div >
-                    <input className='note-title' type="text" placeholder='Enter Note Title' />
-                </div>
-                <div >
-                    <textarea className='note-desc' name="" id="" cols="30" rows="10" placeholder='Desription'></textarea>
-                </div>
-                <button className='note-btn'>ADD NOTES</button>
-            </div>
-
-        </div>
-    )
+const LandingPage = () => {
+  return (
+    <div className='main-container'>
+      <div className='sub-container-a'>
+        <NoteForm />
+      </div>
+      <div className='sub-container-b'>
+        <NotesList />
+      </div>
+    </div>
+  );
 }
 
-export default landingPage
+export default LandingPage;
