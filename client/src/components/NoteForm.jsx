@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/noteForm.css';
 import { useNoteContext } from '../context/NoteContext';
+import { Link } from 'react-router-dom'
+
 
 const NoteForm = () => {
     const { selectedNote, setSelectedNote } = useNoteContext();
@@ -87,6 +89,9 @@ const NoteForm = () => {
             <h2 style={{ color: "red", margin: "30px" }}>
                 WELCOME TO OUR NOTES APP ENTER YOUR NOTES CREDENTIALS BELOW
             </h2>
+            <Link to={'/'}>
+            <button className='logout'>LogOut</button>
+            </Link>
             <form className="notes" onSubmit={handleSubmit}>
                 <div>
                     <input

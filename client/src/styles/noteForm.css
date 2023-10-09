@@ -39,3 +39,21 @@
     color: white;
     background-color: green;
 }
+
+.logout {
+    border: 2px solid red;
+    font-weight: bolder;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: -680px;
+    color: white;
+    background-color: red;
+}
+
+.logout:hover {
+    background-color: green;
+    color: white;
+
+}
